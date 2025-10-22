@@ -1,0 +1,14 @@
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\bin\Debug\net9.0\CalculadoraCompleta.exe
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\bin\Debug\net9.0\CalculadoraCompleta.deps.json
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\bin\Debug\net9.0\CalculadoraCompleta.runtimeconfig.json
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\bin\Debug\net9.0\CalculadoraCompleta.dll
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\bin\Debug\net9.0\CalculadoraCompleta.pdb
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.AssemblyInfoInputs.cache
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.AssemblyInfo.cs
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.csproj.CoreCompileInputs.cache
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.dll
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\refint\CalculadoraCompleta.dll
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.pdb
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\CalculadoraCompleta.genruntimeconfig.cache
+C:\Users\52611156808\Desktop\BackEndMoura\CalculadoraCompleta\obj\Debug\net9.0\ref\CalculadoraCompleta.dll
