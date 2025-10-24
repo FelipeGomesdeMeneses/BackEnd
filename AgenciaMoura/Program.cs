@@ -1,19 +1,17 @@
-﻿using System.Diagnostics;
-
-string[] nomes = new string[10];
-// int[] idades = new int[3];
-float[] Saldo = new float[10];
+﻿string[] nomes = new string[10];
+float[] saldos = new float[10];
 int totalClientes = 0;
+
 int opcao;
 
 do
 {
     Console.Clear();
-    Console.WriteLine($"==== Sistema Bancario ====");
-    Console.WriteLine($"1) Cadastrar Clientes");
+    Console.WriteLine($"=== SISTEMA BANCÁRIO SIMPLES ===");
+    Console.WriteLine($"1) Cadastrar Cliente");
     Console.WriteLine($"2) Depositar");
     Console.WriteLine($"3) Sacar");
-    Console.WriteLine($"4) Tranferir");
+    Console.WriteLine($"4) Transferir");
     Console.WriteLine($"5) Listar Clientes");
     Console.WriteLine($"0) Sair");
     Console.WriteLine($"Escolha uma opção: ");
@@ -22,76 +20,70 @@ do
     switch (opcao)
     {
         case 0:
-
+            Console.WriteLine($"Encerrando o programa...");
             break;
-
         case 1:
             CadastrarCliente();
             break;
-
         case 2:
             Depositar();
             break;
-
         case 3:
             Sacar();
             break;
-
         case 4:
-            Tranferir();
+            Transferir();
             break;
-
         case 5:
             ListarClientes();
             break;
         default:
-            break;  
-         
-}
+            Console.WriteLine($"Opção Inválida");
+            break;
+    }
 
     Console.WriteLine($"Pressione <Enter> para continuar...");
     Console.ReadLine();
 
 } while (opcao != 0);
 
-
-
-
 void CadastrarCliente()
 {
-    // Console.WriteLine($"Funcao cadastrar cliente em deselvolvimento");
+    Console.WriteLine($"=== Cadastro de Clientes ===");
 
+    //verificar se eu posso cadastrar
     if (totalClientes >= 10)
     {
-        Console.WriteLine($"Limite de cadastros atingido");
+        Console.WriteLine($"Limite de clientes atingido");
         return;
     }
-    
-     Console.WriteLine($"Digite o nome do Cliente");
+
+    Console.WriteLine($"Nome do cliente: ");
     nomes[totalClientes] = Console.ReadLine();
-
-    Console.WriteLine($"Digite o saldo de  {nomes[totalClientes]}");
-    Saldo[totalClientes] = float.Parse(Console.ReadLine());
+    saldos[totalClientes] = 0;
     totalClientes++;
-    Console.WriteLine($"Aluno cadastrado com sucesso!");
-}
-
-void ListarClientes()
-{
-    Console.WriteLine($"Funcao listar cliente em deselvolvimento");
+    
+    Console.WriteLine($"cliente cadastrado com sucesso!");
 }
 
 void Depositar()
 {
-    Console.WriteLine($"Funcao Depositar em deselvolvimento");
+    Console.WriteLine($"Função depositar em desenvolvimento");
 }
-
-void Tranferir()
-{
-    Console.WriteLine($"Funcao Tranferir deselvolvimento");
-}
-
 void Sacar()
 {
- Console.WriteLine($"Funcao Sacar em deselvolvimento");
+    Console.WriteLine($"Função sacar em desenvolvimento");
+}
+void Transferir()
+{
+    Console.WriteLine($"Função transferir em desenvolvimento");
+}
+void ListarClientes()
+{
+    Console.WriteLine($"=== Lista Clientes ===");
+    for(int i =0;i< totalClientes; i++)
+    {
+        Console.WriteLine($"Nome: {nomes[i]} , R${saldos[i]}");
+        
+    }
 }
