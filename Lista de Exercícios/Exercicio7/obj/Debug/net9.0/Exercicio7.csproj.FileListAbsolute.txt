@@ -1,0 +1,29 @@
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\bin\Debug\net9.0\Exercicio7.exe
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\bin\Debug\net9.0\Exercicio7.deps.json
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\bin\Debug\net9.0\Exercicio7.runtimeconfig.json
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\bin\Debug\net9.0\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\bin\Debug\net9.0\Exercicio7.pdb
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.AssemblyInfoInputs.cache
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.AssemblyInfo.cs
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.csproj.CoreCompileInputs.cache
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\refint\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.pdb
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\Exercicio7.genruntimeconfig.cache
+C:\Users\52611156808\Desktop\BackEnd_Lista\Exercicio7\obj\Debug\net9.0\ref\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.AssemblyInfoInputs.cache
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.AssemblyInfo.cs
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.csproj.CoreCompileInputs.cache
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.sourcelink.json
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\refint\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.pdb
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\bin\Debug\net9.0\Exercicio7.exe
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\bin\Debug\net9.0\Exercicio7.deps.json
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\bin\Debug\net9.0\Exercicio7.runtimeconfig.json
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\bin\Debug\net9.0\Exercicio7.dll
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\bin\Debug\net9.0\Exercicio7.pdb
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\Exercicio7.genruntimeconfig.cache
+C:\Users\52611156808\Desktop\BackEndMoura\Lista de Exercícios\Exercicio7\obj\Debug\net9.0\ref\Exercicio7.dll
