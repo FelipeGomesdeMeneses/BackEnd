@@ -79,29 +79,44 @@ void Depositar()
     {
         return;
     }
+
     Console.WriteLine($"Valor para depósito: ");
     float valor = float.Parse(Console.ReadLine());
+
+    // Verifica se o valor é positivo
+    if (valor <= 0)
+    {
+        Console.WriteLine($"Valor de depósito inválido. O valor deve ser maior que zero.");
+        return;
+    }
+
     saldos[idCliente] += valor;
     Console.WriteLine($"Depósito de R$ {valor:F2} realizado");
-    
-
-    
 }
 void Sacar()
 {
     int idCliente = BuscarClientes();
-    if (idCliente == -1)  return;
-   
-    Console.WriteLine($"Valor para saque");
+    if (idCliente == -1) return;
+
+    Console.WriteLine($"Valor para saque: ");
     float valor = float.Parse(Console.ReadLine());
-    
-     if(saldos[idCliente] >= valor && valor>0)
+
+    // Verifica se o valor é válido
+    if (valor <= 0)
     {
-        Console.WriteLine($"Saldo insuficiente. Você tem apenas R$ {saldos[idCliente] :F2}");
+        Console.WriteLine($"Valor inválido. O valor do saque deve ser maior que zero.");
         return;
     }
+
+    // Verifica se há saldo suficiente
+    if (saldos[idCliente] < valor)
+    {
+        Console.WriteLine($"Saldo insuficiente. Você tem apenas R$ {saldos[idCliente]:F2}");
+        return;
+    }
+
     saldos[idCliente] -= valor;
-    Console.WriteLine($"Saque no valor de R$ {valor:F2} realizado");
+    Console.WriteLine($"Saque de R$ {valor:F2} realizado com sucesso!");
 }
 void Transferir()
 {
@@ -117,7 +132,7 @@ void Transferir()
     Console.Write($"Valor para transferir: ");
     float valor = float.Parse(Console.ReadLine());
 
-    if (saldos[idDestino] >= valor && valor > 0)
+    if (saldos[idOrigem] >= valor && valor > 0)
     {
         saldos[idOrigem] -= valor;
         saldos[idDestino] += valor;
@@ -134,11 +149,10 @@ void Transferir()
 }
 void ListarClientes()
 {
-    Console.WriteLine($"=== Lista Clientes ===");
+    Console.WriteLine($"=== Lista de Clientes ===");
     for (int i = 0; i < totalClientes; i++)
     {
-        Console.WriteLine($"Nome: {nomes[i]} , R${saldos[i]}");
-
+        Console.WriteLine($"{i}) Nome: {nomes[i]} , Saldo: R$ {saldos[i]:F2}");
     }
 }
 int BuscarClientes()
