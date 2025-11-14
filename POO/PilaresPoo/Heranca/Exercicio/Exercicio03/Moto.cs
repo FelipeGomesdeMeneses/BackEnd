@@ -3,7 +3,7 @@ namespace Exercicio03
     public class Moto : Veiculo
     {
 
-        public string TipoCapacete;
+        public string TipoCapacete = "";
 
 
         public override void MostraInfo()
