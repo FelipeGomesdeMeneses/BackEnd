@@ -82,19 +82,19 @@ do
             CadastrarFaturas();
             break;
         case 2:
-            Console.WriteLine($"Cadastrar Relatório em desenvolvimento");
+            CadastrarRelatorios();
             break;
         case 3:
-            Console.WriteLine($"Cadastrar Contratos em desenvolvimento");
+            CadastrarContratos();
             break;
         case 4:
             ListarFaturas();
             break;
         case 5:
-            Console.WriteLine($"Listar Relatório em desenvolvimento");
+            ListasRelatorios();
             break;
         case 6:
-            Console.WriteLine($"Listar Contratos em desenvolvimento");
+            ListarContratos();
             break;
         case 0:
             Console.WriteLine($"Sair");
@@ -127,19 +127,38 @@ void CadastrarFaturas()
     Documentos.Add(fat);
 
     Console.WriteLine($"Fatura Cadastrada com sucesso");
-    
+
 
 
 }
 
 void CadastrarRelatorios()
 {
+    Console.WriteLine($"Digite o nome do responsável");
+    string responsavel = Console.ReadLine();
 
+    Console.WriteLine($"Digite o texto do relatório");
+    string textorelat = Console.ReadLine();
+
+    Relatorio relat = new Relatorio(responsavel, textorelat);
+    Documentos.Add(relat);
+
+
+    Console.WriteLine($"Relatório Cadastrado com sucesso");
 }
 
 void CadastrarContratos()
 {
+    Console.WriteLine($"Digite o nome ");
+    string nom = Console.ReadLine();
 
+    Console.WriteLine($"Digite as cláusulas do contrato");
+    string clausulas = Console.ReadLine();
+
+    Contrato contr = new Contrato(nom, clausulas);
+    Documentos.Add(contr);
+
+    Console.WriteLine($"Contrato5 Cadastrado com sucesso");
 }
 
 void ListarFaturas()
@@ -157,10 +176,24 @@ void ListarFaturas()
 
 void ListasRelatorios()
 {
-
+    Console.WriteLine($"Listando Relatórios:");
+    foreach (var item in Documentos)
+    {
+        if (item is Relatorio)
+        {
+            item.Imprimir();
+        }
+    }
 }
 
 void ListarContratos()
 {
-
+    Console.WriteLine($"Listando Contratos:");
+    foreach (var item in Documentos)
+    {
+        if (item is Contrato)
+        {
+            item.Imprimir();
+        }
+    }
 }
