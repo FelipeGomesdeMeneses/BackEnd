@@ -1,0 +1,12 @@
+<h1>Listar Nomes</h1>
+
+<p>@ViewBag.Teste</p>
+
+<ul>
+@{
+    foreach(var item in ViewBag.Nomes)
+    {
+        <li>@item</li>
+    }
+}
+</ul>
