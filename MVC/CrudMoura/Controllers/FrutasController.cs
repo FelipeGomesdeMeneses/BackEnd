@@ -27,7 +27,7 @@ namespace CrudMoura.Controllers
 
         public IActionResult ListarFrutas()
         {
-            ViewBag.frutas = ListaDeFrutas;
+            ViewBag.sacolinha = ListaDeFrutas;
             return View();
         }
 

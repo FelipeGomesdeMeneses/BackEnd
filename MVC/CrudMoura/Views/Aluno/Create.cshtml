@@ -1,0 +1,24 @@
+@model CrudMoura.Models.Aluno
+
+<h1>Cadastro de Frutas</h1>
+
+<form asp-action="Create" method="post">
+<label asp-for="Nome">Nome do Aluno</label>
+<input asp-for="Nome" class= "form-control">
+
+<br />
+<label asp-for="CPF">CPF do aluno</label>
+<input asp-for="CPF" class= "form-control">
+
+<br />
+<label asp-for="Idade">Idade do Aluno</label>
+<input asp-for="Idade" class= "form-control">
+
+<br />
+<label asp-for="Email">Email do Aluno</label>
+<input asp-for="Email" class= "form-control">
+
+<br><br>
+<button class= "btn btn-success">Cadastrar Aluno</button>
+
+</form>
