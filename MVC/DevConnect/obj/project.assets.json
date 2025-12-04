@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\52611156808\\.nuget\\packages\\": {}
+    "C:\\Users\\Victor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\52611156808\\Desktop\\BackEndMoura\\MVC\\DevConnect\\DevConnect.csproj",
+      "projectUniqueName": "C:\\Users\\Victor\\Desktop\\BackEnd\\MVC\\DevConnect\\DevConnect.csproj",
       "projectName": "DevConnect",
-      "projectPath": "C:\\Users\\52611156808\\Desktop\\BackEndMoura\\MVC\\DevConnect\\DevConnect.csproj",
-      "packagesPath": "C:\\Users\\52611156808\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\52611156808\\Desktop\\BackEndMoura\\MVC\\DevConnect\\obj\\",
+      "projectPath": "C:\\Users\\Victor\\Desktop\\BackEnd\\MVC\\DevConnect\\DevConnect.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victor\\Desktop\\BackEnd\\MVC\\DevConnect\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\52611156808\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -68,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
