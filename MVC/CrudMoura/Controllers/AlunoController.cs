@@ -7,12 +7,19 @@ namespace CrudMoura.Controllers
     public class AlunoController : Controller
     {
         private readonly ILogger<AlunoController> _logger;
+        private readonly CrudMouraContext _context;
+
+        public AlunoController(ILogger<AlunoController> logger, CrudMouraContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
 
         public static List<Aluno> ListaDeAlunos = new List<Aluno>
         {
-            new Aluno{ID = 1, Nome = "Felipe Gomes", CPF = 12345678901, Idade = 17, Email = "felipegomes@gmail.com"},
-            new Aluno{ID = 2, Nome = "Felipe Salgado", CPF = 12345678902, Idade = 16, Email = "felipetorolho@gmail.com"},
-            new Aluno{ID = 3, Nome = "Felipe Torolho",  CPF = 12345678903, Idade = 16, Email = "felipetorolho@gmail.com"},
+            new Aluno{id = 1, Nome = "Felipe Gomes", CPF = "333.123.321-67", Idade = 17, Email = "felipegomes@gmail.com"},
+            new Aluno{id = 2, Nome = "Felipe Salgado", CPF = "333.123.321-68", Idade = 16, Email = "felipetorolho@gmail.com"},
+            new Aluno{id = 3, Nome = "Felipe Torolho",  CPF = "333.123.321-69", Idade = 16, Email = "felipetorolho@gmail.com"},
         };
 
         public AlunoController(ILogger<AlunoController> logger)
@@ -39,7 +46,7 @@ namespace CrudMoura.Controllers
         [HttpPost]
         public IActionResult Create(Aluno aluno)
         {
-            aluno.ID = ListaDeAlunos.Max(f => f.ID) + 1;
+            aluno.id = ListaDeAlunos.Max(f => f.id) + 1;
 
             ListaDeAlunos.Add(aluno);
 

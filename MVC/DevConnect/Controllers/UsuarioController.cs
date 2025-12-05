@@ -8,16 +8,20 @@ using Microsoft.Extensions.Logging;
 
 namespace DevConnect.Controllers
 {
-    public class CadastroController : Controller
+    public class UsuarioController : Controller
     {
-        private readonly ILogger<CadastroController> _logger;
+        private readonly ILogger<UsuarioController> _logger;
 
-        public CadastroController(ILogger<CadastroController> logger)
+        public UsuarioController(ILogger<UsuarioController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult Cadastro()
         {
             return View();
         }
