@@ -1,154 +1,50 @@
 @{
     ViewData["Title"] = "Logo DevConnect";
 }
-<link rel="stylesheet" href="~/css/Perfil.css">
+<link rel="stylesheet" href="~/css/cadastro.css">
 
-
-<h1>Tela Perfil - DevConnect</h1>
-    <header id="cabecalho">
-        <nav>
-            <a asp-controller="Perfil" asp-action="Index">
-                <img id="logo-desktop" src="~/images/logo-devconnect-md_light.svg" alt="Logo do DevConnect">
-            </a>
-
-            <a asp-controller="PErfil" asp-action="Index">
-                <img id="logo-mobile" src="~/images/logo-devconnect-sm_light.svg" alt="Logo do DevConnect">
-            </a>
-
-            <div class="cabecalho-acoes">
-                <a asp-controller="Perfil" asp-action="Index">
-                    <img src="~/images/icone-casa-azul.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="~/images/icone-coracao-azul.svg" alt="">
-                </a>
-                <a href="#">
-                    <img class="foto-de-perfil" src="~/images/transferir.jpg" alt="">
-                </a>
-            </div>
-        </nav>
-
-    </header>
-
+<h1>Tela principal login - DevConnect</h1>
     <main>
-        <section class="perfil-cabecalho">
-            <div id="estilo-foto">
-                <img id="foto-perfil" src="~/images/transferir.jpg" alt="">
-            </div>
-            <div>
-                
-                <div class="informacoes-perfil">
-                    <h2>YuriAlberto_ofc</h2>
+        <div>
+            <form class="estilo-formulario">
+                <img src="~/images/logo-devconnect-md_light.svg" alt="Logo DevConnect">
+                <p>Cadastrar-se para comunidade exclusiva de desenvolvedores(as).</p>
 
-                        <p id="publicacao-numeros">3 publicações       160 seguindo       904 seguidores</p>
-                        
-                        <p id="publicacao-informacoes">Yuri Alberto
-                            <a href="#">Editar Perfil</a>
-                            <a asp-controller="Home" asp-action="Index">Sair</a>
-                        </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="posts">
-            <div id="cabecalho-post">
-                <img src="~/images/icone-galeria-branco.svg" alt="">
-                <h3>Publicações</h3>
-            </div>
-            
-            <div class="post">
-                <div class="post-cabecalho">
-                    <img class="foto-de-perfil" src="~/images/transferir.jpg" alt="">
-                    <p>YuriAlberto_ofc</p>
+                <div id="formulario-campos">
+                    <input type="text" placeholder=" Nome e sobrenome">
 
                 </div>
 
-                <p>Falaram que clássico é guerra, que iam vir pra cima, que o momento era deles... No final, a gente só
-                    fez o que sempre faz: jogou bola, respeitou a camisa e saiu com os três pontos. Quem tem história,
-                    mostra em campo. O resto é barulho. ⚪️⚫ #ClássicoÉNosso #SegueOTrabalho #VaiCorinthians
-                </p>
-
-                <div class="post-rodape">
-                    <button>
-                        <img src="~/images/icone-coracao-branco.svg" alt="">
-                    </button>
-
-                    <button>
-
-                        <img src="~/images/icone-comentario-branco.svg" alt="">
-                    </button>
-                    <span>200 curtidas</span>
+                <div id="formulario-campos">
+                    <input type="text" placeholder=" Nome de usuário">
 
                 </div>
 
-                <button id="botao-comentario" type="button">Ver todos os comentários...</button>
+                <div id="formulario-campos">
+                    <input type="email" placeholder=" E-mail">
+
+                </div>
+
+                <div id="formulario-campos">
+                    <input type="password" placeholder=" Senha">
+
+                </div>
+
+                <div id="upload">
+                    <label class="secao-upload" >Faça upload da sua imagem aqui... </label>
+                    <input type="file" id="secao-upload">
+                </div>
+
+                <button type="submit" class="formulario-botao-azul">Cadastrar-se</button>
+
+                <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
+
+            </form>
+
+            <section id="secao-login" class="estilo-formulario">
+                <p>Tem uma conta? <a asp-controller="Home" asp-action="Index">Conecte-se</a></p>
+            </section>
 
 
         </div>
-        </section>
-        <section class="posts">
-
-            <div class="post">
-                <div class="post-cabecalho">
-                    <img class="foto-de-perfil" src="~/images/transferir.jpg" alt="">
-                    <p>YuriAlberto_ofc</p>
-
-                </div>
-
-                <p>Falaram que clássico é guerra, que iam vir pra cima, que o momento era deles... No final, a gente só
-                    fez o que sempre faz: jogou bola, respeitou a camisa e saiu com os três pontos. Quem tem história,
-                    mostra em campo. O resto é barulho. ⚪️⚫ #ClássicoÉNosso #SegueOTrabalho #VaiCorinthians
-                </p>
-
-                <div class="post-rodape">
-                    <button>
-                        <img src="~/images/icone-coracao-branco.svg" alt="">
-                    </button>
-
-                    <button>
-
-                        <img src="~/images/icone-comentario-branco.svg" alt="">
-                    </button>
-                    <span>200 curtidas</span>
-
-                </div>
-
-                <button id="botao-comentario" type="button">Ver todos os comentários...</button>
-
-
-        </div>
-        </section>
-        <section class="posts">
-           
-            <div class="post">
-                <div class="post-cabecalho">
-                    <img class="foto-de-perfil" src="~/images/transferir.jpg" alt="">
-                    <p>YuriAlberto_ofc</p>
-
-                </div>
-
-                <p>Falaram que clássico é guerra, que iam vir pra cima, que o momento era deles... No final, a gente só
-                    fez o que sempre faz: jogou bola, respeitou a camisa e saiu com os três pontos. Quem tem história,
-                    mostra em campo. O resto é barulho. ⚪️⚫ #ClássicoÉNosso #SegueOTrabalho #VaiCorinthians
-                </p>
-
-                <div class="post-rodape">
-                    <button>
-                        <img src="~/images/icone-coracao-branco.svg" alt="">
-                    </button>
-
-                    <button>
-
-                        <img src="~/images/icone-comentario-branco.svg" alt="">
-                    </button>
-                    <span>200 curtidas</span>
-
-                </div>
-
-                <button id="botao-comentario" type="button">Ver todos os comentários...</button>
-
-
-        </div>
-        </section>
-
     </main>

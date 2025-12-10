@@ -21,7 +21,7 @@ namespace DevConnect.Controllers
         {
             return View();
         }
-        public IActionResult Cadastro()
+        public IActionResult Perfil()
         {
             return View();
         }
