@@ -1,0 +1,78 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 3%;
+
+}
+
+p {
+    color: var(--cor-cinza-claro);
+}
+
+.estilo-formulario {
+    max-width: 342px;
+}
+
+#formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.formulario-botao-azul {
+    width: 100%;
+}
+
+#secao-login {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#secao-login>p {
+    color: var(--cor-cinza-claro);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+@media (max-width: 320px) {
+
+    main>div {
+        width: 100%;
+        
+    }
+
+    form{
+        padding: 6%;
+    }
+
+    .estilo-formulario {
+        border: none;
+        border-top: var(--borda);
+        border-bottom: var(--borda);
+    }
+}
