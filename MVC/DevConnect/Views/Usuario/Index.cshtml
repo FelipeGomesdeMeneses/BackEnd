@@ -1,50 +1,62 @@
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @{
     ViewData["Title"] = "Logo DevConnect";
 }
+
+@model DevConnect.Models.TbUsuario
+
 <link rel="stylesheet" href="~/css/cadastro.css">
 
+<script defer>
+    let usuarioNovoCadastrado = "@ViewBag.UsuarioNovoCadastrado";
+
+    if (usuarioNovoCadastrado == "Nao Cadastrado") {
+        alert("Não foi possível cadastrar esse usuário 😔! Fale com um dos nossos administradores.");
+    }
+</script>
+
 <h1>Tela principal login - DevConnect</h1>
-    <main>
-        <div>
-            <form class="estilo-formulario">
-                <img src="~/images/logo-devconnect-md_light.svg" alt="Logo DevConnect">
-                <p>Cadastrar-se para comunidade exclusiva de desenvolvedores(as).</p>
+<main>
+    <div>
+        <form class="estilo-formulario" asp-action="Index" asp-controller="Usuario" enctype="multipart/form-data">
+            <img src="~/images/logo-devconnect-md_light.svg" alt="Logo DevConnect">
+            <p>Cadastrar-se para comunidade exclusiva de desenvolvedores(as).</p>
 
-                <div id="formulario-campos">
-                    <input type="text" placeholder=" Nome e sobrenome">
+            <div id="formulario-campos">
+                <input type="text" asp-for="NomeCompleto" placeholder=" Nome e sobrenome">
 
-                </div>
+            </div>
 
-                <div id="formulario-campos">
-                    <input type="text" placeholder=" Nome de usuário">
+            <div id="formulario-campos">
+                <input type="text" asp-for="NomeUsuario" placeholder=" Nome de usuário">
 
-                </div>
+            </div>
 
-                <div id="formulario-campos">
-                    <input type="email" placeholder=" E-mail">
+            <div id="formulario-campos">
+                <input type="email" asp-for="Email" placeholder=" E-mail">
 
-                </div>
+            </div>
 
-                <div id="formulario-campos">
-                    <input type="password" placeholder=" Senha">
+            <div id="formulario-campos">
+                <input type="password" asp-for="Senha" placeholder=" Senha">
 
-                </div>
+            </div>
 
-                <div id="upload">
-                    <label class="secao-upload" >Faça upload da sua imagem aqui... </label>
-                    <input type="file" id="secao-upload">
-                </div>
+            <div id="upload">
+                <label class="secao-upload" for="secao-upload">Faça upload da sua imagem aqui... </label>
+                <input type="file" name="Imagem" id="secao-upload"">
+            </div>x
 
-                <button type="submit" class="formulario-botao-azul">Cadastrar-se</button>
+            <button type="submit" class="formulario-botao-azul">Cadastrar-se</button>
 
-                <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
+            <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
 
-            </form>
+        </form>
 
-            <section id="secao-login" class="estilo-formulario">
-                <p>Tem uma conta? <a asp-controller="Home" asp-action="Index">Conecte-se</a></p>
-            </section>
+        <section id="secao-login" class="estilo-formulario">
+            <p>Tem uma conta? <a asp-controller="Home" asp-action="Index">Conecte-se</a></p>
+        </section>
 
 
-        </div>
-    </main>
+    </div>
+</main>
